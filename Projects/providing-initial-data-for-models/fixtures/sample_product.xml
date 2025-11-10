@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+    <object model="shop.product" pk="4">
+        <field name="title" type="CharField">Sample4</field>
+    </object>
+</django-objects>

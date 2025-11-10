@@ -1,0 +1,9 @@
+[
+    {
+        "model": "shop.product",
+        "pk": 2,
+        "fields": {
+            "title": "Sample2"
+        }
+    }
+]
