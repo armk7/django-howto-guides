@@ -68,7 +68,7 @@ I used this approach and YAML file to insert the third record (Sample3)
 ```
 > pip install pyYAML
 ```
-- Then after adding the [yaml file](Projects/providing-initial-data-for-models/shop/data/sample_product.yaml) to a custom path (i named my folder data), run the loaddata command:
+- Then after adding the [yaml file](shop/data/sample_product.yaml) to a custom path (i named my folder data), run the loaddata command:
 ```
 > python manage.py shop/data/sample_product.yaml
 ```
@@ -76,7 +76,7 @@ I used this approach and YAML file to insert the third record (Sample3)
 (for some reason '.yml' resulted in error: `yml is not a known serialization format.` '.yaml' was ok.)
 
 #### <b>2.3. </b> Djagno will also look into a directory defined in a list of directories in FIXTURE_DIRS config var (in settings.py).<br>
-I used this approach and a [xml file](Projects/providing-initial-data-for-models/fixtures/sample_product.xml) to insert the Sample4 record.<br>
+I used this approach and a [xml file](fixtures/sample_product.xml) to insert the Sample4 record.<br>
 - First create a folder named 'fixtures' in top level project directory (next to manage.py).<br>
 Put your fixture file inside it <u>(No sub-directory with app name required.)</u>.
 - Then add `FIXTURE_DIRS = [ BASE_DIR / "fixtures" ]` to settings.py
