@@ -1,0 +1,2 @@
+{% for row in data %}{{ row|safe }}
+{% endfor %}

@@ -10,5 +10,9 @@
     <a href="{% url 'home:stream_csv' %}">download csv (stream)</a><br>
     <a href="{% url 'home:template_csv' %}">download csv (using template)</a><br>
     <a href="{% url 'home:template_csv2' %}">download csv (improved)</a><br>
+    <a href="{% url 'home:template_csv3' %}">download csv (autoescape is off)</a>
+    {% if a %}
+    {{ a }}
+    {% endif %}
 </body>
 </html>

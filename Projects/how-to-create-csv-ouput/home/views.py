@@ -80,3 +80,19 @@ def template_csv_improved(request):
     response = HttpResponse(csv_content, content_type="text/csv")
     response['Content-Disposition'] = 'attachment; filename="data.csv"'
     return response
+
+def template_csv_noescape(request):
+    response = HttpResponse(
+        content_type="text/csv",
+        headers={"Content-Disposition": 'attachment; filename="somefilename.csv"'},
+    )
+
+    csv_data = (
+        ("First row", "Foo", "Bar", "Baz"),
+        ("Second row", "A", "B", "C", '"Testing"', "Here's a quote"),
+    )
+
+    t = loader.get_template("home/csv_noescape.txt")
+    c = {"data": csv_data}
+    response.write(t.render(c))
+    return response
