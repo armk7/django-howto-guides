@@ -4,3 +4,4 @@
 
 ## Templates and output
 - [How to create CSV output](how-to-create-csv-output)
+- [How to create PDF files](how-to-create-pdf-files)
